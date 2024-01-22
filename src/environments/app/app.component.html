@@ -1,0 +1,28 @@
+<div class="main">
+<div>
+ <h2>Weather forecast</h2>
+</div>
+<img src="../assets/Cloud.jpg" style="width: 50px;height: 90px;" >
+    <div >
+      
+      <div>
+      <input
+        type="text"
+        [(ngModel)]="cityname"
+        placeholder="Enter a cityName" />
+      </div>
+    </div>
+    <button type="buton"  (click)="getSingleDay()" style="background-color: rgb(22, 69, 189);color: aliceblue;">Get Forecast</button>
+    <button type="buton" (click)="clearData()" style="background-color: rgb(16, 15, 15);color: aliceblue;">Clear</button>
+    <div *ngIf="data != null">
+      <p>
+      Temperature {{ data.temp }} 
+      </p>
+      <p>Humidity: {{ data.humidity }}</p>
+      <p>Feels like: {{ data.feels_like }}</p>
+    </div>
+
+  <div *ngIf="errors">
+    Incorrect city name. Please try again.
+  </div>
+</div>

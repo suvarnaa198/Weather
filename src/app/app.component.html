@@ -1,0 +1,40 @@
+<div style="height: 500px;width: 300px;border-radius: 3%;margin-left: 40%;margin-top: 5%;background-image: linear-gradient(rgb(110,142,238),rgb(47,163,202));display: inline-block;border: 1px solid black;box-shadow: 5px 5px 2px black;">
+   
+  <div style="height: 10%;margin-top: 10%;">
+      <div >
+            
+          <div>
+              <input class="form-control" type="text" placeholder="Enter City Name"  [(ngModel)]="cityname" style="height: 37px;width: 90%;margin-left: 5%;margin-top: 1%;text-align: center;">
+  
+          </div>
+        </div>
+  </div>
+  <div style="margin-left: 15%;">
+  
+      <button type="buton"  (click)="getSingleDay()" style="background-color: rgb(22, 69, 189);color: aliceblue;">Get Forecast</button>
+      <button type="buton" (click)="clearData()" style="background-color: rgb(16, 15, 15);color: aliceblue;">Clear</button>
+  </div>
+  
+  
+  <div style="background-color: transparent;height: 150px; margin-top: 10%;width: 90%;margin-left: 5%;border-radius: 3%;">
+  
+      <img src="./../assets/image.jpeg" style="height: 100px;width: 200px;margin-left: 13%;border-radius: 5%;">
+      <div style="margin-left: 23%;margin-top: 20%;display: inline-block;color: white  ;">
+  
+          <div  *ngIf="data != null" style="color: black;font-weight: 500;">
+              <p>
+              Temperature {{ data.temp }} 
+              </p>
+              <p>Humidity: {{ data.humidity }}</p>
+              <p>Feels like: {{ data.feels_like }}</p>
+            </div>
+        
+         
+     
+          
+      </div>
+      <div *ngIf="errors" style="font-size: 14px;color: red;">
+        Incorrect city name. Please try again.
+      </div>
+  </div>
+  </div>

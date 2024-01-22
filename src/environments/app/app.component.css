@@ -1,0 +1,50 @@
+.main {
+    min-height: 200px;
+    font: normal 14px sans-serif;
+    text-align: center;
+    background-image: linear-gradient(rgb(110, 142, 238), rgb(47, 163, 202));
+    overflow: hidden;
+    line-height: 25px;
+    border-radius: 4px;
+    color: #fafafc;
+    height: 480px;
+    padding-bottom: 10px;
+    margin: 20px auto 0 auto;
+    max-width: 430px;
+    position: relative;
+
+    }
+  
+    .search {
+      margin-bottom: 15px;
+    }
+  
+  
+
+
+ 
+  input {
+    font: normal 14px sans-serif;
+    padding: 13px 0 4px 80px;
+    border-radius: 13px;
+    outline: none;
+    border: none;
+  }
+  
+  button {
+    color: #2b3d52;
+      cursor: pointer;
+    font-size: 14px;
+    padding: 3px 10px 4px 10px;
+    margin-left: 15px;
+    border-radius: 4px;
+    background-color: white;
+    margin-top:25px;
+  }
+  
+ 
+  
+ 
+  
+ 
+  
